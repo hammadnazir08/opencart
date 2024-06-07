@@ -1,0 +1,70 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="float-end">
+        <button type="submit" form="form-merchant" formaction="{{ fetch_and_save_action }}" data-bs-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-bs-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a>
+      </div>
+      <h1>{{ heading_title }}</h1>
+      <ol class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+          <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-header"><i class="fa-solid fa-list"></i> {{ heading_title }}</div>
+      <div class="card-body">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-merchant" class="form-horizontal">
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="input-merchant">{{ text_select_merchant }}</label>
+            <div class="col-sm-10">
+              <select name="merchant_id" id="input-merchant" class="form-control">
+                {% for merchant in merchants %}
+                <option value="{{ merchant.user_id }}">{{ merchant.username }} - {{ merchant.email }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="input-store">{{ text_select_store }}</label>
+            <div class="col-sm-10">
+              <select name="store_id" id="input-store" class="form-control">
+                {% for store in stores %}
+                <option value="{{ store.store_id }}">{{ store.name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+        </form>
+
+        <h3>{{ text_relations_heading }}</h3> <!-- Add a heading here -->
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>  
+              <th>{{ column_store_name }}</th>
+              <th>{{ column_user_name }}</th>
+              <th>{{ column_action }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for relation in relations %}
+            <tr>
+              <td>{{ relation.store_name }}</td>
+              <td>{{ relation.username }}</td>
+              <td>
+                <a href="{{ remove_action }}&user_id={{ relation.user_id }}&store_id={{ relation.store_id }}" class="btn btn-danger"><i class="fa fa-trash"></i> {{ button_remove }}</a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{{ footer }}
