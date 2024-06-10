@@ -1,0 +1,926 @@
+
+
+2024-05-21 08:54:00 - 0:  Error: Could not call registry key model_common_merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 08:59:25 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 08:59:27 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 08:59:27 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 08:59:28 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 08:59:28 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 08:59:28 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 09:08:08 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 09:08:09 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 09:08:09 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-05-21 09:14:20 - 0:  Error: Unknown column 'role' in 'where clause'<br/>Error No: 1054<br/>SELECT user_id, username FROM oc_user WHERE role = 'merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-05-21 10:09:59 - 0:  Error: Unknown column 'role' in 'where clause'<br/>Error No: 1054<br/>SELECT user_id, username FROM oc_user WHERE role = 'merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-05-21 10:39:06 - 0:  Unable to find template "common/column_left.twig" (looked into: ) in "admin/view/template/merchant/merchant.twig" at line 1.
+File: C:\xamp PHP8\htdocs\opencart\upload\system\storage\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 227
+
+2024-05-21 11:23:00 - 0:  Error: Table 'opencart.oc_users' doesn't exist<br/>Error No: 1146<br/>SELECT * FROM oc_users 
+                                INNER JOIN oc_user_group ON oc_users.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-05-31 10:10:33 - 0:  Error: Table 'opencart.oc_users' doesn't exist<br/>Error No: 1146<br/>SELECT * FROM oc_users 
+                                INNER JOIN oc_user_group ON oc_users.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-05-31 10:13:27 - 0:  Error: Table 'opencart.oc_users' doesn't exist<br/>Error No: 1146<br/>SELECT * FROM oc_users 
+                                INNER JOIN oc_user_group ON oc_users.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 07:51:42 - 0:  Error: Table 'opencart.oc_users' doesn't exist<br/>Error No: 1146<br/>SELECT * FROM oc_users 
+                                INNER JOIN oc_user_group ON oc_users.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 07:54:05 - 0:  Error: Table 'opencart.oc_users' doesn't exist<br/>Error No: 1146<br/>SELECT * FROM oc_users 
+                                INNER JOIN oc_user_group ON oc_users.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 07:55:21 - 0:  Error: Table 'opencart.oc_users' doesn't exist<br/>Error No: 1146<br/>SELECT * FROM oc_users 
+                                INNER JOIN oc_user_group ON oc_users.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 07:57:07 - 0:  Error: Unknown column 'oc_users.groupid' in 'on clause'<br/>Error No: 1054<br/>SELECT * FROM oc_user 
+                                INNER JOIN oc_user_group ON oc_users.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 07:57:37 - 0:  Error: Unknown column 'oc_user.groupid' in 'on clause'<br/>Error No: 1054<br/>SELECT * FROM oc_user 
+                                INNER JOIN oc_user_group ON oc_user.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 07:57:41 - 0:  Error: Unknown column 'oc_user.groupid' in 'on clause'<br/>Error No: 1054<br/>SELECT * FROM oc_user 
+                                INNER JOIN oc_user_group ON oc_user.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 07:57:41 - 0:  Error: Unknown column 'oc_user.groupid' in 'on clause'<br/>Error No: 1054<br/>SELECT * FROM oc_user 
+                                INNER JOIN oc_user_group ON oc_user.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 07:57:42 - 0:  Error: Unknown column 'oc_user.groupid' in 'on clause'<br/>Error No: 1054<br/>SELECT * FROM oc_user 
+                                INNER JOIN oc_user_group ON oc_user.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 08:00:10 - 0:  Error: Unknown column 'oc_user.user_groupid' in 'on clause'<br/>Error No: 1054<br/>SELECT * FROM oc_user 
+                                INNER JOIN oc_user_group ON oc_user.user_groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchant'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 08:20:21 - 0:  Error: Unknown column 'oc_user.groupid' in 'on clause'<br/>Error No: 1054<br/>SELECT * FROM oc_user
+                                INNER JOIN oc_user_group ON oc_user.groupid = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchants'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 08:20:31 - 0:  Error: Unknown column 'oc_user.group_id' in 'on clause'<br/>Error No: 1054<br/>SELECT * FROM oc_user
+                                INNER JOIN oc_user_group ON oc_user.group_id = oc_user_group.user_group_id 
+                                WHERE oc_user_group.name = 'Merchants'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 10:47:44 - 0:  <b>Notice</b>:  Undefined property: Proxy::fetchAndSaveUserStoreRelation in <b>C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php</b> on line <b>92</b>
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\proxy.php
+Line: 85
+
+2024-06-05 10:50:33 - 0:  Error: Could not call registry key merchant!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-06-05 10:51:53 - 0:  <b>Notice</b>:  Undefined property: Proxy::fetchAndSaveUserStoreRelation in <b>C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php</b> on line <b>92</b>
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\proxy.php
+Line: 85
+
+2024-06-05 10:55:02 - 0:  Too few arguments to function Opencart\Admin\Controller\Merchant\Merchant::fetchAndSaveRelations(), 0 passed and exactly 2 expected
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php
+Line: 85
+
+2024-06-05 10:58:09 - PHP Warning: Undefined array key "merchant_id"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php
+Line: 90
+
+2024-06-05 10:58:09 - PHP Warning: Undefined array key "store_id"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php
+Line: 91
+
+2024-06-05 10:58:09 - 0:  Opencart\Admin\Model\Merchant\Merchant::fetchAndSaveUserStoreRelation(): Argument #1 ($user_id) must be of type int, null given
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\merchant\merchant.php
+Line: 41
+
+2024-06-05 11:00:11 - PHP Warning: Undefined array key "merchant_id"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php
+Line: 90
+
+2024-06-05 11:00:11 - PHP Warning: Undefined array key "store_id"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php
+Line: 91
+
+2024-06-05 11:00:11 - 0:  Opencart\Admin\Model\Merchant\Merchant::fetchAndSaveUserStoreRelation(): Argument #1 ($user_id) must be of type int, null given
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\merchant\merchant.php
+Line: 41
+
+2024-06-05 11:00:14 - PHP Warning: Undefined array key "merchant_id"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php
+Line: 90
+
+2024-06-05 11:00:14 - PHP Warning: Undefined array key "store_id"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php
+Line: 91
+
+2024-06-05 11:00:14 - 0:  Opencart\Admin\Model\Merchant\Merchant::fetchAndSaveUserStoreRelation(): Argument #1 ($user_id) must be of type int, null given
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\merchant\merchant.php
+Line: 41
+
+2024-06-05 11:00:14 - PHP Warning: Undefined array key "merchant_id"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php
+Line: 90
+
+2024-06-05 11:00:14 - PHP Warning: Undefined array key "store_id"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\merchant\merchant.php
+Line: 91
+
+2024-06-05 11:00:14 - 0:  Opencart\Admin\Model\Merchant\Merchant::fetchAndSaveUserStoreRelation(): Argument #1 ($user_id) must be of type int, null given
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\merchant\merchant.php
+Line: 41
+
+2024-06-05 14:10:34 - 0:  Error: Table 'opencart.oc_user_history' doesn't exist<br/>Error No: 1146<br/>DELETE FROM `oc_user_history` WHERE `user_id` = '2'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 14:10:39 - 0:  Error: Table 'opencart.oc_user_history' doesn't exist<br/>Error No: 1146<br/>DELETE FROM `oc_user_history` WHERE `user_id` = '2'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-05 14:10:43 - 0:  Error: Table 'opencart.oc_user_history' doesn't exist<br/>Error No: 1146<br/>DELETE FROM `oc_user_history` WHERE `user_id` = '2'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-06 07:40:10 - PHP Warning:  Trying to access array offset on value of type null in C:\xamp PHP8\htdocs\opencart\upload\catalog\controller\mail\order.php on line 151
+2024-06-06 10:21:53 - 0:  Undefined constant "Opencart\Admin\Controller\Common\session"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\common\dashboard.php
+Line: 13
+
+2024-06-06 10:22:03 - PHP Warning: Undefined variable $session
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\common\dashboard.php
+Line: 13
+
+2024-06-06 10:22:36 - PHP Warning: Undefined variable $session
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\common\dashboard.php
+Line: 23
+
+2024-06-06 10:22:38 - PHP Warning: Undefined variable $session
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\common\dashboard.php
+Line: 23
+
+2024-06-06 10:22:38 - PHP Warning: Undefined variable $session
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\common\dashboard.php
+Line: 23
+
+2024-06-06 10:22:39 - PHP Warning: Undefined variable $session
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\common\dashboard.php
+Line: 23
+
+2024-06-06 10:22:39 - PHP Warning: Undefined variable $session
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\common\dashboard.php
+Line: 23
+
+2024-06-06 10:22:39 - PHP Warning: Undefined variable $session
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\common\dashboard.php
+Line: 23
+
+2024-06-06 11:03:41 - PHP Warning: Undefined array key "store_id"
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 854
+
+2024-06-06 11:22:26 - PHP Warning: Undefined variable $store_id
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 859
+
+2024-06-06 11:26:19 - PHP Warning: Undefined variable $store_id
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 859
+
+2024-06-06 11:27:25 - PHP Warning: Undefined variable $store_id
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 859
+
+2024-06-06 11:28:02 - PHP Warning: Undefined variable $store_id
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 859
+
+2024-06-07 07:54:00 - PHP Warning: Undefined variable $store_id
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 859
+
+2024-06-07 07:56:52 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 859
+
+2024-06-07 08:11:49 - 0:  Error: Unknown column 'oc_user_group.name' in 'field list'<br/>Error No: 1054<br/>SELECT `oc_user_group.name` FROM `oc_user` INNER JOIN `oc_user_group` ON `oc_user.user_group_id` = `oc_user_group.user_group_id` WHERE `oc_user.user_id` = '3' LIMIT 1
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 09:22:08 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 860
+
+2024-06-07 09:22:08 - 0:  Opencart\System\Library\DB::query(): Argument #1 ($sql) must be of type string, null given, called in C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php on line 860
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db.php
+Line: 47
+
+2024-06-07 09:22:26 - 0:  Opencart\System\Library\DB::query(): Argument #1 ($sql) must be of type string, stdClass given, called in C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php on line 860
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db.php
+Line: 47
+
+2024-06-07 09:28:22 - 0:  Object of class stdClass could not be converted to string
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 861
+
+2024-06-07 09:29:21 - 0:  Cannot use object of type stdClass as array
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 861
+
+2024-06-07 09:29:26 - 0:  Cannot use object of type stdClass as array
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\product.php
+Line: 861
+
+2024-06-07 11:11:32 - 0:  Too few arguments to function Opencart\Admin\Model\Setting\Store::getStores(), 0 passed and exactly 1 expected
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\setting\store.php
+Line: 94
+
+2024-06-07 11:48:07 - PHP Warning: Undefined variable $store_data
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\setting\store.php
+Line: 108
+
+2024-06-07 11:48:07 - 0:  Opencart\Admin\Model\Setting\Store::getStores(): Return value must be of type array, null returned
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\setting\store.php
+Line: 108
+
+2024-06-07 11:48:36 - 0:  Opencart\Admin\Model\Setting\Store::getStores(): Return value must be of type array, none returned
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\setting\store.php
+Line: 109
+
+2024-06-07 11:57:36 - 0:  Error: Could not call registry key model_setting_store!
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\controller.php
+Line: 39
+
+2024-06-07 12:24:28 - 0:  Error: Unknown column 'c1.store_id' in 'IN/ALL/ANY subquery'<br/>Error No: 1054<br/>SELECT cp.`category_id` AS `category_id`, 
+					   GROUP_CONCAT(cd1.`name` ORDER BY cp.`level` SEPARATOR ' > ') AS `name`, 
+					   c1.`parent_id`, 
+					   c1.`sort_order`, 
+					   c1.`status` 
+				FROM `oc_category_path` cp 
+				LEFT JOIN `oc_category` c1 ON (cp.`category_id` = c1.`category_id`) 
+				LEFT JOIN `oc_category` c2 ON (cp.`path_id` = c2.`category_id`) 
+				LEFT JOIN `oc_category_description` cd1 ON (cp.`path_id` = cd1.`category_id`) 
+				LEFT JOIN `oc_category_description` cd2 ON (cp.`category_id` = cd2.`category_id`) 
+				WHERE cd1.`language_id` = '1' 
+				AND cd2.`language_id` = '1' AND c1.`store_id` IN (SELECT msr.`store_id` 
+											FROM `oc_merchant_store_relation` msr 
+											WHERE msr.`user_id` = 4) GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 12:25:59 - 0:  Error: Unknown column 'c1.store_id' in 'IN/ALL/ANY subquery'<br/>Error No: 1054<br/>SELECT cp.`category_id` AS `category_id`, 
+					   GROUP_CONCAT(cd1.`name` ORDER BY cp.`level` SEPARATOR ' > ') AS `name`, 
+					   c1.`parent_id`, 
+					   c1.`sort_order`, 
+					   c1.`status` 
+				FROM `oc_category_path` cp 
+				LEFT JOIN `oc_category` c1 ON (cp.`category_id` = c1.`category_id`) 
+				LEFT JOIN `oc_category` c2 ON (cp.`path_id` = c2.`category_id`) 
+				LEFT JOIN `oc_category_description` cd1 ON (cp.`path_id` = cd1.`category_id`) 
+				LEFT JOIN `oc_category_description` cd2 ON (cp.`category_id` = cd2.`category_id`) 
+				WHERE cd1.`language_id` = '1' 
+				AND cd2.`language_id` = '1' AND c1.`store_id` IN (SELECT msr.`store_id` 
+											FROM `oc_merchant_store_relation` msr 
+											WHERE msr.`user_id` = 4) GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 12:27:52 - 0:  Error: Unknown column 'c1.store_id' in 'IN/ALL/ANY subquery'<br/>Error No: 1054<br/>SELECT cp.`category_id` AS `category_id`, 
+					   GROUP_CONCAT(cd1.`name` ORDER BY cp.`level` SEPARATOR ' > ') AS `name`, 
+					   c1.`parent_id`, 
+					   c1.`sort_order`, 
+					   c1.`status` 
+				FROM `oc_category_path` cp 
+				LEFT JOIN `oc_category` c1 ON (cp.`category_id` = c1.`category_id`) 
+				LEFT JOIN `oc_category` c2 ON (cp.`path_id` = c2.`category_id`) 
+				LEFT JOIN `oc_category_description` cd1 ON (cp.`path_id` = cd1.`category_id`) 
+				LEFT JOIN `oc_category_description` cd2 ON (cp.`category_id` = cd2.`category_id`) 
+				WHERE cd1.`language_id` = '1' 
+				AND cd2.`language_id` = '1' AND c1.`store_id` IN (SELECT msr.`store_id` 
+											FROM `oc_merchant_store_relation` msr 
+											WHERE msr.`user_id` = 4) GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 12:27:53 - 0:  Error: Unknown column 'c1.store_id' in 'IN/ALL/ANY subquery'<br/>Error No: 1054<br/>SELECT cp.`category_id` AS `category_id`, 
+					   GROUP_CONCAT(cd1.`name` ORDER BY cp.`level` SEPARATOR ' > ') AS `name`, 
+					   c1.`parent_id`, 
+					   c1.`sort_order`, 
+					   c1.`status` 
+				FROM `oc_category_path` cp 
+				LEFT JOIN `oc_category` c1 ON (cp.`category_id` = c1.`category_id`) 
+				LEFT JOIN `oc_category` c2 ON (cp.`path_id` = c2.`category_id`) 
+				LEFT JOIN `oc_category_description` cd1 ON (cp.`path_id` = cd1.`category_id`) 
+				LEFT JOIN `oc_category_description` cd2 ON (cp.`category_id` = cd2.`category_id`) 
+				WHERE cd1.`language_id` = '1' 
+				AND cd2.`language_id` = '1' AND c1.`store_id` IN (SELECT msr.`store_id` 
+											FROM `oc_merchant_store_relation` msr 
+											WHERE msr.`user_id` = 4) GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 12:27:53 - 0:  Error: Unknown column 'c1.store_id' in 'IN/ALL/ANY subquery'<br/>Error No: 1054<br/>SELECT cp.`category_id` AS `category_id`, 
+					   GROUP_CONCAT(cd1.`name` ORDER BY cp.`level` SEPARATOR ' > ') AS `name`, 
+					   c1.`parent_id`, 
+					   c1.`sort_order`, 
+					   c1.`status` 
+				FROM `oc_category_path` cp 
+				LEFT JOIN `oc_category` c1 ON (cp.`category_id` = c1.`category_id`) 
+				LEFT JOIN `oc_category` c2 ON (cp.`path_id` = c2.`category_id`) 
+				LEFT JOIN `oc_category_description` cd1 ON (cp.`path_id` = cd1.`category_id`) 
+				LEFT JOIN `oc_category_description` cd2 ON (cp.`category_id` = cd2.`category_id`) 
+				WHERE cd1.`language_id` = '1' 
+				AND cd2.`language_id` = '1' AND c1.`store_id` IN (SELECT msr.`store_id` 
+											FROM `oc_merchant_store_relation` msr 
+											WHERE msr.`user_id` = 4) GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 12:27:53 - 0:  Error: Unknown column 'c1.store_id' in 'IN/ALL/ANY subquery'<br/>Error No: 1054<br/>SELECT cp.`category_id` AS `category_id`, 
+					   GROUP_CONCAT(cd1.`name` ORDER BY cp.`level` SEPARATOR ' > ') AS `name`, 
+					   c1.`parent_id`, 
+					   c1.`sort_order`, 
+					   c1.`status` 
+				FROM `oc_category_path` cp 
+				LEFT JOIN `oc_category` c1 ON (cp.`category_id` = c1.`category_id`) 
+				LEFT JOIN `oc_category` c2 ON (cp.`path_id` = c2.`category_id`) 
+				LEFT JOIN `oc_category_description` cd1 ON (cp.`path_id` = cd1.`category_id`) 
+				LEFT JOIN `oc_category_description` cd2 ON (cp.`category_id` = cd2.`category_id`) 
+				WHERE cd1.`language_id` = '1' 
+				AND cd2.`language_id` = '1' AND c1.`store_id` IN (SELECT msr.`store_id` 
+											FROM `oc_merchant_store_relation` msr 
+											WHERE msr.`user_id` = 4) GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 12:27:53 - 0:  Error: Unknown column 'c1.store_id' in 'IN/ALL/ANY subquery'<br/>Error No: 1054<br/>SELECT cp.`category_id` AS `category_id`, 
+					   GROUP_CONCAT(cd1.`name` ORDER BY cp.`level` SEPARATOR ' > ') AS `name`, 
+					   c1.`parent_id`, 
+					   c1.`sort_order`, 
+					   c1.`status` 
+				FROM `oc_category_path` cp 
+				LEFT JOIN `oc_category` c1 ON (cp.`category_id` = c1.`category_id`) 
+				LEFT JOIN `oc_category` c2 ON (cp.`path_id` = c2.`category_id`) 
+				LEFT JOIN `oc_category_description` cd1 ON (cp.`path_id` = cd1.`category_id`) 
+				LEFT JOIN `oc_category_description` cd2 ON (cp.`category_id` = cd2.`category_id`) 
+				WHERE cd1.`language_id` = '1' 
+				AND cd2.`language_id` = '1' AND c1.`store_id` IN (SELECT msr.`store_id` 
+											FROM `oc_merchant_store_relation` msr 
+											WHERE msr.`user_id` = 4) GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 12:49:57 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\category.php
+Line: 333
+
+2024-06-07 12:49:57 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10' at line 1<br/>Error No: 1064<br/> GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 12:53:36 - 0:  Error: Unknown column 'pts.store_id' in 'IN/ALL/ANY subquery'<br/>Error No: 1054<br/>SELECT cp.`category_id` 
+				AS `category_id`, GROUP_CONCAT(cd1.`name` 
+				ORDER BY cp.`level` SEPARATOR ' > ') 
+				AS `name`, c1.`parent_id`, c1.`sort_order`, c1.`status` 
+				FROM `oc_category_path` cp 
+				LEFT JOIN `oc_category` c1 
+				ON (cp.`category_id` = c1.`category_id`) 
+				LEFT JOIN `oc_category` c2 
+				ON (cp.`path_id` = c2.`category_id`) 
+				LEFT JOIN `oc_category_description` cd1 
+				ON (cp.`path_id` = cd1.`category_id`) 
+				LEFT JOIN `oc_category_description` cd2 
+				ON (cp.`category_id` = cd2.`category_id`)
+				LEFT JOIN `oc_category_to_store` cts 
+				ON (cp.`category_id` = cts.`category_id`) 
+				WHERE cd1.`language_id` = '1' 
+				AND cd2.`language_id` = '1'
+				AND pts.`store_id` IN (SELECT store_id 
+				FROM `oc_merchant_store_relation` 
+				WHERE user_id = 3) GROUP BY cp.`category_id` ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 12:59:17 - 0:  <b>Notice</b>:  Undefined property: Proxy::getManufacturers in <b>C:\xamp PHP8\htdocs\opencart\upload\admin\controller\catalog\manufacturer.php</b> on line <b>117</b>
+File: C:\xamp PHP8\htdocs\opencart\upload\system\engine\proxy.php
+Line: 85
+
+2024-06-07 13:01:09 - PHP Warning: Undefined variable $role_name
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\manufacturer.php
+Line: 116
+
+2024-06-07 13:01:09 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\manufacturer.php
+Line: 133
+
+2024-06-07 13:01:09 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY name ASC LIMIT 0,10' at line 1<br/>Error No: 1064<br/> ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 13:05:20 - PHP Warning: Undefined variable $role_name
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\manufacturer.php
+Line: 116
+
+2024-06-07 13:05:20 - PHP Warning: Undefined variable $user_id
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\manufacturer.php
+Line: 122
+
+2024-06-07 13:07:19 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\catalog\manufacturer.php
+Line: 143
+
+2024-06-07 13:07:19 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY name ASC LIMIT 0,10' at line 1<br/>Error No: 1064<br/> ORDER BY name ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 13:56:20 - 0:  Error: Unknown column 'i.product_id' in 'on clause'<br/>Error No: 1054<br/>SELECT * FROM `oc_information` i 
+			LEFT JOIN `oc_information_description` id 
+			ON (i.`information_id` = id.`information_id`) 
+			LEFT JOIN `oc_information_to_store` its 
+			ON (i.`product_id` = its.`product_id`)
+			WHERE id.`language_id` = '1'
+			AND its.`store_id` IN (SELECT store_id 
+			FROM `oc_merchant_store_relation` 
+			WHERE user_id = 4) ORDER BY id.title ASC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 14:20:06 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\sale\order.php
+Line: 408
+
+2024-06-07 14:20:06 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 1<br/>Error No: 1064<br/> WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 14:39:39 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 9<br/>Error No: 1064<br/>SELECT *  
+				FROM `oc_order` o 
+				INNER JOIN `oc_merchant_store_relation` mtr 
+				ON o.`store_id` = mtr.`store_id` 
+				WHERE mtr.`store_id` IN (
+				SELECT store_id 
+				FROM `oc_merchant_store_relation` 
+				WHERE user_id = '3'
+			) WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 14:40:45 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 8<br/>Error No: 1064<br/>SELECT *  
+				FROM `oc_order` o 
+				INNER JOIN `oc_merchant_store_relation` mtr 
+				ON o.`store_id` = mtr.`store_id` 
+				WHERE mtr.`store_id` IN (
+				SELECT store_id 
+				FROM `oc_merchant_store_relation` 
+				WHERE user_id =4) WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 14:42:26 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT *  
+        FROM `oc_order` o 
+        INNER JOIN `oc_merchant_store_relation` mtr 
+        ON o.`store_id` = mtr.`store_id` 
+        WHERE mtr.`store_id` IN (
+            SELECT store_id 
+            FROM `oc_merchant_store_relation` 
+            WHERE user_id = 4
+        )
+        AND `order_status_id` > '0' WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 14:42:28 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT *  
+        FROM `oc_order` o 
+        INNER JOIN `oc_merchant_store_relation` mtr 
+        ON o.`store_id` = mtr.`store_id` 
+        WHERE mtr.`store_id` IN (
+            SELECT store_id 
+            FROM `oc_merchant_store_relation` 
+            WHERE user_id = 4
+        )
+        AND `order_status_id` > '0' WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 14:42:28 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT *  
+        FROM `oc_order` o 
+        INNER JOIN `oc_merchant_store_relation` mtr 
+        ON o.`store_id` = mtr.`store_id` 
+        WHERE mtr.`store_id` IN (
+            SELECT store_id 
+            FROM `oc_merchant_store_relation` 
+            WHERE user_id = 4
+        )
+        AND `order_status_id` > '0' WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 14:42:28 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT *  
+        FROM `oc_order` o 
+        INNER JOIN `oc_merchant_store_relation` mtr 
+        ON o.`store_id` = mtr.`store_id` 
+        WHERE mtr.`store_id` IN (
+            SELECT store_id 
+            FROM `oc_merchant_store_relation` 
+            WHERE user_id = 4
+        )
+        AND `order_status_id` > '0' WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-07 14:43:10 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 8<br/>Error No: 1064<br/>SELECT *  
+        FROM `oc_order` o 
+        INNER JOIN `oc_merchant_store_relation` mtr 
+        ON o.`store_id` = mtr.`store_id` 
+        WHERE mtr.`store_id` IN (
+            SELECT store_id 
+            FROM `oc_merchant_store_relation` 
+            WHERE user_id = 4) WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:44:22 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 8<br/>Error No: 1064<br/>SELECT *  
+        FROM `oc_order` o 
+        INNER JOIN `oc_merchant_store_relation` mtr 
+        ON o.`store_id` = mtr.`store_id` 
+        WHERE mtr.`store_id` IN (
+            SELECT store_id 
+            FROM `oc_merchant_store_relation` 
+            WHERE user_id = 4) WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:47:36 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+				FROM `oc_order` o 
+				INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id` 
+				WHERE mtr.`store_id` IN (
+					SELECT store_id 
+					FROM `oc_merchant_store_relation` 
+					WHERE user_id = 4
+				)
+				AND `order_status_id` > '0';
+				 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:47:37 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+				FROM `oc_order` o 
+				INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id` 
+				WHERE mtr.`store_id` IN (
+					SELECT store_id 
+					FROM `oc_merchant_store_relation` 
+					WHERE user_id = 4
+				)
+				AND `order_status_id` > '0';
+				 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:47:37 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+				FROM `oc_order` o 
+				INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id` 
+				WHERE mtr.`store_id` IN (
+					SELECT store_id 
+					FROM `oc_merchant_store_relation` 
+					WHERE user_id = 4
+				)
+				AND `order_status_id` > '0';
+				 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:47:37 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+				FROM `oc_order` o 
+				INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id` 
+				WHERE mtr.`store_id` IN (
+					SELECT store_id 
+					FROM `oc_merchant_store_relation` 
+					WHERE user_id = 4
+				)
+				AND `order_status_id` > '0';
+				 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:48:18 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 11<br/>Error No: 1064<br/>SELECT * 
+FROM `oc_order` o 
+INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id`
+WHERE mtr.`store_id` IN (
+    SELECT store_id 
+    FROM `oc_merchant_store_relation` 
+    WHERE user_id = 4
+) 
+AND o.`order_status_id` > '0';
+
+				 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:48:54 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+FROM `oc_order` o 
+INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id`
+WHERE o.`order_status_id` > '0'
+AND mtr.`store_id` IN (
+    SELECT store_id 
+    FROM `oc_merchant_store_relation` 
+    WHERE user_id = 4
+)
+		 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:48:55 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+FROM `oc_order` o 
+INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id`
+WHERE o.`order_status_id` > '0'
+AND mtr.`store_id` IN (
+    SELECT store_id 
+    FROM `oc_merchant_store_relation` 
+    WHERE user_id = 4
+)
+		 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:48:55 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+FROM `oc_order` o 
+INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id`
+WHERE o.`order_status_id` > '0'
+AND mtr.`store_id` IN (
+    SELECT store_id 
+    FROM `oc_merchant_store_relation` 
+    WHERE user_id = 4
+)
+		 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:48:55 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+FROM `oc_order` o 
+INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id`
+WHERE o.`order_status_id` > '0'
+AND mtr.`store_id` IN (
+    SELECT store_id 
+    FROM `oc_merchant_store_relation` 
+    WHERE user_id = 4
+)
+		 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:48:56 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+FROM `oc_order` o 
+INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id`
+WHERE o.`order_status_id` > '0'
+AND mtr.`store_id` IN (
+    SELECT store_id 
+    FROM `oc_merchant_store_relation` 
+    WHERE user_id = 4
+)
+		 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 07:53:54 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 10<br/>Error No: 1064<br/>SELECT * 
+FROM `oc_order` o 
+INNER JOIN `oc_merchant_store_relation` mtr ON o.`store_id` = mtr.`store_id`
+WHERE o.`order_status_id` > '0'
+AND mtr.`store_id` IN (
+    SELECT store_id 
+    FROM `oc_merchant_store_relation` 
+    WHERE user_id = '4'
+)
+		 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:00:02 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\sale\order.php
+Line: 415
+
+2024-06-08 08:00:02 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 1<br/>Error No: 1064<br/> WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:00:49 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 1<br/>Error No: 1064<br/>SELECT COUNT(*) AS `total` FROM `oc_order` WHERE 1=2 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:01:10 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 1<br/>Error No: 1064<br/>SELECT COUNT(*) AS `total` FROM `oc_order` WHERE 1=2 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:01:12 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 1<br/>Error No: 1064<br/>SELECT COUNT(*) AS `total` FROM `oc_order` WHERE 1=2 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:01:12 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 1<br/>Error No: 1064<br/>SELECT COUNT(*) AS `total` FROM `oc_order` WHERE 1=2 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:01:12 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 1<br/>Error No: 1064<br/>SELECT COUNT(*) AS `total` FROM `oc_order` WHERE 1=2 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:02:37 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 1<br/>Error No: 1064<br/>SELECT COUNT(*) AS `total` FROM `oc_order` WHERE 1=2 WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:07:14 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\sale\order.php
+Line: 399
+
+2024-06-08 08:07:14 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `order_status_id` > '0'' at line 1<br/>Error No: 1064<br/> WHERE `order_status_id` > '0'
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:08:35 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\sale\order.php
+Line: 180
+
+2024-06-08 08:08:35 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE o.`order_status_id` > '0' ORDER BY o.order_id DESC LIMIT 0,10' at line 1<br/>Error No: 1064<br/> WHERE o.`order_status_id` > '0' ORDER BY o.order_id DESC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:22:49 - PHP Warning: Undefined variable $sql
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\model\sale\order.php
+Line: 212
+
+2024-06-08 08:22:49 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE o.`order_status_id` > '0' ORDER BY o.order_id DESC LIMIT 0,10' at line 1<br/>Error No: 1064<br/> WHERE o.`order_status_id` > '0' ORDER BY o.order_id DESC LIMIT 0,10
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:27:46 - PHP Warning: Undefined variable $filter_store_id
+File: C:\xamp PHP8\htdocs\opencart\upload\admin\controller\sale\order.php
+Line: 165
+
+2024-06-08 08:41:55 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND o.`store_id` IN (SELECT store_id 
+			FROM `oc_merchant_store_relation` 
+	...' at line 9<br/>Error No: 1064<br/>SELECT o.`order_id`, 
+			CONCAT(o.`firstname`, ' ', o.`lastname`) 
+			AS customer, 
+			(SELECT os.`name` 
+			FROM `oc_order_status` os 
+			WHERE os.`order_status_id` = o.`order_status_id` 
+			AND os.`language_id` = '1') 
+			AS order_status, o.`store_name`, o.`shipping_method`, o.`total`, o.`currency_code`, o.`currency_value`, o.`date_added`, o.`date_modified` FROM `oc_order` o
+			AND o.`store_id` IN (SELECT store_id 
+			FROM `oc_merchant_store_relation` 
+			WHERE user_id = 4) WHERE o.`order_status_id` > '0' ORDER BY o.date_added DESC LIMIT 0,5
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:48:09 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE o.`order_status_id` > '0' ORDER BY o.date_added DESC LIMIT 0,5' at line 20<br/>Error No: 1064<br/>SELECT 
+					o.`order_id`, 
+					CONCAT(o.`firstname`, ' ', o.`lastname`) AS customer, 
+					(SELECT os.`name` 
+					FROM `oc_order_status` os 
+					WHERE os.`order_status_id` = o.`order_status_id` 
+					AND os.`language_id` = '1') AS order_status, 
+					o.`store_name`, 
+					o.`shipping_method`, 
+					o.`total`, 
+					o.`currency_code`, 
+					o.`currency_value`, 
+					o.`date_added`, 
+					o.`date_modified` 
+				FROM `oc_order` o 
+				WHERE o.`store_id` IN (
+					SELECT store_id 
+					FROM `oc_merchant_store_relation` 
+					WHERE user_id = 4
+					) WHERE o.`order_status_id` > '0' ORDER BY o.date_added DESC LIMIT 0,5
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:48:11 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE o.`order_status_id` > '0' ORDER BY o.date_added DESC LIMIT 0,5' at line 20<br/>Error No: 1064<br/>SELECT 
+					o.`order_id`, 
+					CONCAT(o.`firstname`, ' ', o.`lastname`) AS customer, 
+					(SELECT os.`name` 
+					FROM `oc_order_status` os 
+					WHERE os.`order_status_id` = o.`order_status_id` 
+					AND os.`language_id` = '1') AS order_status, 
+					o.`store_name`, 
+					o.`shipping_method`, 
+					o.`total`, 
+					o.`currency_code`, 
+					o.`currency_value`, 
+					o.`date_added`, 
+					o.`date_modified` 
+				FROM `oc_order` o 
+				WHERE o.`store_id` IN (
+					SELECT store_id 
+					FROM `oc_merchant_store_relation` 
+					WHERE user_id = 4
+					) WHERE o.`order_status_id` > '0' ORDER BY o.date_added DESC LIMIT 0,5
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:48:12 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE o.`order_status_id` > '0' ORDER BY o.date_added DESC LIMIT 0,5' at line 20<br/>Error No: 1064<br/>SELECT 
+					o.`order_id`, 
+					CONCAT(o.`firstname`, ' ', o.`lastname`) AS customer, 
+					(SELECT os.`name` 
+					FROM `oc_order_status` os 
+					WHERE os.`order_status_id` = o.`order_status_id` 
+					AND os.`language_id` = '1') AS order_status, 
+					o.`store_name`, 
+					o.`shipping_method`, 
+					o.`total`, 
+					o.`currency_code`, 
+					o.`currency_value`, 
+					o.`date_added`, 
+					o.`date_modified` 
+				FROM `oc_order` o 
+				WHERE o.`store_id` IN (
+					SELECT store_id 
+					FROM `oc_merchant_store_relation` 
+					WHERE user_id = 4
+					) WHERE o.`order_status_id` > '0' ORDER BY o.date_added DESC LIMIT 0,5
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+
+2024-06-08 08:54:20 - 0:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' ORDER BY o.date_added DESC LIMIT 0,5' at line 12<br/>Error No: 1064<br/>SELECT o.`order_id`, 
+				CONCAT(o.`firstname`, ' ', o.`lastname`) 
+				AS customer, 
+				(SELECT os.`name` 
+				FROM `oc_order_status` os 
+				WHERE os.`order_status_id` = o.`order_status_id` 
+				AND os.`language_id` = '1') 
+				AS order_status, o.`store_name`, o.`shipping_method`, o.`total`, o.`currency_code`, o.`currency_value`, o.`date_added`, o.`date_modified` FROM `oc_order` o WHERE o.`order_status_id` > '0'AND o.`store_id` IN (
+					SELECT store_id 
+					FROM `oc_merchant_store_relation` 
+					WHERE user_id = 4
+					)' ORDER BY o.date_added DESC LIMIT 0,5
+File: C:\xamp PHP8\htdocs\opencart\upload\system\library\db\mysqli.php
+Line: 76
+

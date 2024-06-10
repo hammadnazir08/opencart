@@ -54,7 +54,21 @@ class Returns extends \Opencart\System\Engine\Model {
 	 * @return array
 	 */
 	public function getReturns(array $data = []): array {
-		$sql = "SELECT *, CONCAT(r.`firstname`, ' ', r.`lastname`) AS customer, (SELECT rs.`name` FROM `" . DB_PREFIX . "return_status` rs WHERE rs.`return_status_id` = r.`return_status_id` AND rs.`language_id` = '" . (int)$this->config->get('config_language_id') . "') AS return_status FROM `" . DB_PREFIX . "return` r";
+		// Retrieve user_id from session data
+		$user_id = $this->session->data['user_id'];
+
+		// Query to check if the user is a merchant
+		$merchant_check = "SELECT `" . DB_PREFIX . "user_group`.`name` FROM `" . DB_PREFIX . "user` INNER JOIN `" . DB_PREFIX . "user_group` ON `" . DB_PREFIX . "user`.`user_group_id` = `" . DB_PREFIX . "user_group`.`user_group_id` WHERE `" . DB_PREFIX . "user`.`user_id` = '" . $user_id . "' LIMIT 1";
+		$merchant_check_query = $this->db->query($merchant_check);
+		$role_name = $merchant_check_query->row['name'];
+		// var_dump($role_name); die();
+
+		$sql = "SELECT *, CONCAT(r.`firstname`, ' ', r.`lastname`) 
+		AS customer, (SELECT rs.`name` FROM `" . DB_PREFIX . "return_status` rs 
+		WHERE rs.`return_status_id` = r.`return_status_id` 
+		AND rs.`language_id` = '" . (int)$this->config->get('config_language_id') . "')
+		 AS return_status FROM `" . DB_PREFIX . "return` r
+		 ";
 
 		$implode = [];
 
@@ -92,6 +106,13 @@ class Returns extends \Opencart\System\Engine\Model {
 
 		if ($implode) {
 			$sql .= " WHERE " . implode(" AND ", $implode);
+		}
+		if ($role_name == "Merchants") {
+			$sql .= "WHERE r.order_id IN (SELECT order_id 
+			FROM `" . DB_PREFIX . "order` 
+			WHERE store_id IN (SELECT store_id 
+		 FROM `" . DB_PREFIX . "merchant_store_relation` 
+		 WHERE user_id = " . (int)$user_id . "))";
 		}
 
 		$sort_data = [

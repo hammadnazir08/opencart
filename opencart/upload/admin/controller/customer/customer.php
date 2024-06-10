@@ -506,10 +506,19 @@ class Customer extends \Opencart\System\Engine\Controller {
 
 		$data['stores'] = [];
 
+		$user_id = $this->session->data['user_id'];
+
+		// Query to check if the user is a merchant
+		$merchant_check = "SELECT `" . DB_PREFIX . "user_group`.`name` FROM `" . DB_PREFIX . "user` INNER JOIN `" . DB_PREFIX . "user_group` ON `" . DB_PREFIX . "user`.`user_group_id` = `" . DB_PREFIX . "user_group`.`user_group_id` WHERE `" . DB_PREFIX . "user`.`user_id` = '" . $user_id . "' LIMIT 1";
+		$merchant_check_query = $this->db->query($merchant_check);
+		$role_name = $merchant_check_query->row['name'];
+		// var_dump($role_name); die();
+		if ($role_name != "Merchants") {
 		$data['stores'][] = [
 			'store_id' => 0,
 			'name'     => $this->language->get('text_default')
 		];
+	}
 
 		$this->load->model('setting/store');
 

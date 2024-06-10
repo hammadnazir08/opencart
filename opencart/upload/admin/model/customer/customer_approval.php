@@ -12,8 +12,17 @@ class CustomerApproval extends \Opencart\System\Engine\Model {
 	 * @return array
 	 */
 	public function getCustomerApprovals(array $data = []): array {
-		$sql = "SELECT *, CONCAT(c.`firstname`, ' ', c.`lastname`) AS customer, cgd.`name` AS customer_group, ca.`type` FROM `" . DB_PREFIX . "customer_approval` ca LEFT JOIN `" . DB_PREFIX . "customer` c ON (ca.`customer_id` = c.`customer_id`) LEFT JOIN `" . DB_PREFIX . "customer_group_description` cgd ON (c.`customer_group_id` = cgd.`customer_group_id`) WHERE cgd.`language_id` = '" . (int)$this->config->get('config_language_id') . "'";
+			// Retrieve user_id from session data
+			$user_id = $this->session->data['user_id'];
 
+			// Query to check if the user is a merchant
+			$merchant_check = "SELECT `" . DB_PREFIX . "user_group`.`name` FROM `" . DB_PREFIX . "user` INNER JOIN `" . DB_PREFIX . "user_group` ON `" . DB_PREFIX . "user`.`user_group_id` = `" . DB_PREFIX . "user_group`.`user_group_id` WHERE `" . DB_PREFIX . "user`.`user_id` = '" . $user_id . "' LIMIT 1";
+			$merchant_check_query = $this->db->query($merchant_check);
+			$role_name = $merchant_check_query->row['name'];
+			// var_dump($role_name); die();
+
+		$sql = "SELECT *, CONCAT(c.`firstname`, ' ', c.`lastname`) AS customer, cgd.`name` AS customer_group, ca.`type` FROM `" . DB_PREFIX . "customer_approval` ca LEFT JOIN `" . DB_PREFIX . "customer` c ON (ca.`customer_id` = c.`customer_id`) LEFT JOIN `" . DB_PREFIX . "customer_group_description` cgd ON (c.`customer_group_id` = cgd.`customer_group_id`) WHERE cgd.`language_id` = '" . (int)$this->config->get('config_language_id') . "'";
+// var_dump($sql); die();
 		if (!empty($data['filter_customer'])) {
 			$sql .= " AND CONCAT(c.`firstname`, ' ', c.`lastname`) LIKE '" . $this->db->escape('%' . (string)$data['filter_customer'] . '%') . "'";
 		}
@@ -37,7 +46,13 @@ class CustomerApproval extends \Opencart\System\Engine\Model {
 		if (!empty($data['filter_date_to'])) {
 			$sql .= " AND DATE(c.`date_added`) <= DATE('" . $this->db->escape((string)$data['filter_date_to']) . "')";
 		}
-
+		if ($role_name == "Merchants") {
+			$sql .= "AND `store_id` IN (
+				SELECT store_id 
+				FROM `" . DB_PREFIX . "merchant_store_relation` 
+				WHERE user_id = " . (int)$user_id . "
+				)". "";
+		}
 		$sql .= " ORDER BY c.`date_added` DESC";
 
 		if (isset($data['start']) || isset($data['limit'])) {

@@ -11,30 +11,32 @@ class Extension extends \Opencart\System\Engine\Model {
 	 */
 	public function getExtensions(): array {
 		$query = $this->db->query("SELECT DISTINCT `extension` FROM `" . DB_PREFIX . "extension`");
-
+		
 		return $query->rows;
-	}
-
-	/**
-	 * @param string $type
-	 *
-	 * @return array
-	 */
-	public function getExtensionsByType(string $type): array {
-		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "extension` WHERE `type` = '" . $this->db->escape($type) . "' ORDER BY `code` ASC");
-
-		return $query->rows;
-	}
-
-	/**
-	 * @param string $type
-	 * @param string $code
-	 *
-	 * @return array
-	 */
-	public function getExtensionByCode(string $type, string $code): array {
-		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "extension` WHERE `type` = '" . $this->db->escape($type) . "' AND `code` = '" . $this->db->escape($code) . "'");
-
+		}
+		
+		/**
+		 * @param string $type
+		 *
+		 * @return array
+		 */
+		public function getExtensionsByType(string $type): array {
+			$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "extension` WHERE `type` = '" . $this->db->escape($type) . "' ORDER BY `code` ASC");
+			// echo "<pre>";
+			// var_dump($query); die();
+			// echo "</pre>";
+			return $query->rows;
+			}
+			
+			/**
+			 * @param string $type
+			 * @param string $code
+			 *
+			 * @return array
+			 */
+			public function getExtensionByCode(string $type, string $code): array {
+				$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "extension` WHERE `type` = '" . $this->db->escape($type) . "' AND `code` = '" . $this->db->escape($code) . "'");
+				
 		return $query->row;
 	}
 

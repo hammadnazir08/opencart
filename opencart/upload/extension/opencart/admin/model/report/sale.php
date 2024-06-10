@@ -12,10 +12,24 @@ class Sale extends \Opencart\System\Engine\Model {
 	 * @return float
 	 */
 	public function getTotalSales(array $data = []): float {
+		$user_id = $this->session->data['user_id'];
+
+		// Query to check if the user is a merchant
+		$merchant_check = "SELECT `" . DB_PREFIX . "user_group`.`name` FROM `" . DB_PREFIX . "user` INNER JOIN `" . DB_PREFIX . "user_group` ON `" . DB_PREFIX . "user`.`user_group_id` = `" . DB_PREFIX . "user_group`.`user_group_id` WHERE `" . DB_PREFIX . "user`.`user_id` = '" . $user_id . "' LIMIT 1";
+		$merchant_check_query = $this->db->query($merchant_check);
+		$role_name = $merchant_check_query->row['name'];
+		// var_dump($role_name); die();
 		$sql = "SELECT SUM(`total`) AS `total` FROM `" . DB_PREFIX . "order` WHERE `order_status_id` > '0'";
 
 		if (!empty($data['filter_date_added'])) {
 			$sql .= " AND DATE(`date_added`) = DATE('" . $this->db->escape((string)$data['filter_date_added']) . "')";
+		}
+		if ($role_name == "Merchants") {
+			$sql .= "AND `store_id` IN (
+				SELECT store_id 
+				FROM `" . DB_PREFIX . "merchant_store_relation`
+				WHERE user_id = " . (int)$user_id . "
+				)". "";
 		}
 
 		$query = $this->db->query($sql);

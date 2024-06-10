@@ -12,7 +12,13 @@ class Order extends \Opencart\System\Engine\Model {
 	 * @return array
 	 */
 	public function getOrder(int $order_id): array {
-		$order_query = $this->db->query("SELECT *, (SELECT `os`.`name` FROM `" . DB_PREFIX . "order_status` os WHERE `os`.`order_status_id` = `o`.`order_status_id` AND `os`.`language_id` = '" . (int)$this->config->get('config_language_id') . "') AS `order_status` FROM `" . DB_PREFIX . "order` `o` WHERE `o`.`order_id` = '" . (int)$order_id . "'");
+		$order_query = $this->db->query("SELECT *, 
+		(SELECT `os`.`name` 
+		FROM `" . DB_PREFIX . "order_status` os 
+		WHERE `os`.`order_status_id` = `o`.`order_status_id` 
+		AND `os`.`language_id` = '" . (int)$this->config->get('config_language_id') . "') 
+		AS `order_status` FROM `" . DB_PREFIX . "order` `o` 
+		WHERE `o`.`order_id` = '" . (int)$order_id . "'");
 
 		if ($order_query->num_rows) {
 			$country_query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "country` WHERE `country_id` = '" . (int)$order_query->row['payment_country_id'] . "'");
@@ -160,7 +166,23 @@ class Order extends \Opencart\System\Engine\Model {
 	 * @return array
 	 */
 	public function getOrders(array $data = []): array {
-		$sql = "SELECT o.`order_id`, CONCAT(o.`firstname`, ' ', o.`lastname`) AS customer, (SELECT os.`name` FROM `" . DB_PREFIX . "order_status` os WHERE os.`order_status_id` = o.`order_status_id` AND os.`language_id` = '" . (int)$this->config->get('config_language_id') . "') AS order_status, o.`store_name`, o.`shipping_method`, o.`total`, o.`currency_code`, o.`currency_value`, o.`date_added`, o.`date_modified` FROM `" . DB_PREFIX . "order` o";
+				// Retrieve user_id from session data
+				$user_id = $this->session->data['user_id'];
+
+				// Query to check if the user is a merchant
+				$merchant_check = "SELECT `" . DB_PREFIX . "user_group`.`name` FROM `" . DB_PREFIX . "user` INNER JOIN `" . DB_PREFIX . "user_group` ON `" . DB_PREFIX . "user`.`user_group_id` = `" . DB_PREFIX . "user_group`.`user_group_id` WHERE `" . DB_PREFIX . "user`.`user_id` = '" . $user_id . "' LIMIT 1";
+				$merchant_check_query = $this->db->query($merchant_check);
+				$role_name = $merchant_check_query->row['name'];
+				// var_dump($role_name); die();
+		
+			$sql = "SELECT o.`order_id`, 
+				CONCAT(o.`firstname`, ' ', o.`lastname`) 
+				AS customer, 
+				(SELECT os.`name` 
+				FROM `" . DB_PREFIX . "order_status` os 
+				WHERE os.`order_status_id` = o.`order_status_id` 
+				AND os.`language_id` = '" . (int)$this->config->get('config_language_id') . "') 
+				AS order_status, o.`store_name`, o.`shipping_method`, o.`total`, o.`currency_code`, o.`currency_value`, o.`date_added`, o.`date_modified` FROM `" . DB_PREFIX . "order` o";
 
 		if (!empty($data['filter_order_status'])) {
 			$implode = [];
@@ -210,6 +232,14 @@ class Order extends \Opencart\System\Engine\Model {
 
 		if (!empty($data['filter_total'])) {
 			$sql .= " AND o.`total` = '" . (float)$data['filter_total'] . "'";
+		}
+
+		if ($role_name == "Merchants") {
+			$sql .= "AND o.`store_id` IN (
+					SELECT store_id 
+					FROM `" . DB_PREFIX . "merchant_store_relation` 
+					WHERE user_id = " . (int)$user_id . "
+					)". "";
 		}
 
 		$sort_data = [
@@ -370,7 +400,7 @@ class Order extends \Opencart\System\Engine\Model {
 		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "order_total` WHERE `order_id` = '" . (int)$order_id . "' ORDER BY `sort_order`");
 
 		return $query->rows;
-	}
+	} 
 
 	/**
 	 * @param array $data
@@ -378,28 +408,17 @@ class Order extends \Opencart\System\Engine\Model {
 	 * @return int
 	 */
 	public function getTotalOrders(array $data = []): int {
-		$user_id = $this->session->data['user_id'];
+								// Retrieve user_id from session data
+	$user_id = $this->session->data['user_id'];
 
-		// Query to check if the user is a merchant
-		$merchant_check = "SELECT `" . DB_PREFIX . "user_group`.`name` FROM `" . DB_PREFIX . "user` INNER JOIN `" . DB_PREFIX . "user_group` ON `" . DB_PREFIX . "user`.`user_group_id` = `" . DB_PREFIX . "user_group`.`user_group_id` WHERE `" . DB_PREFIX . "user`.`user_id` = '" . $user_id . "' LIMIT 1";
-		$merchant_check_query = $this->db->query($merchant_check);
-		$role_name = $merchant_check_query->row['name'];
-		// var_dump($role_name); die();
-		if ($role_name == "Merchants") {
-			$sql = "SELECT *  
-        FROM `" . DB_PREFIX . "order` o 
-        INNER JOIN `" . DB_PREFIX . "merchant_store_relation` mtr 
-        ON o.`store_id` = mtr.`store_id` 
-        WHERE mtr.`store_id` IN (
-            SELECT store_id 
-            FROM `" . DB_PREFIX . "merchant_store_relation` 
-            WHERE user_id = " . (int)$user_id . ")";
-        
-        
+	// Query to check if the user is a merchant
+	$merchant_check = "SELECT `" . DB_PREFIX . "user_group`.`name` FROM `" . DB_PREFIX . "user` INNER JOIN `" . DB_PREFIX . "user_group` ON `" . DB_PREFIX . "user`.`user_group_id` = `" . DB_PREFIX . "user_group`.`user_group_id` WHERE `" . DB_PREFIX . "user`.`user_id` = '" . $user_id . "' LIMIT 1";
+	$merchant_check_query = $this->db->query($merchant_check);
+	$role_name = $merchant_check_query->row['name'];
+	// var_dump($role_name); die();
 
-		}else{
 		$sql = "SELECT COUNT(*) AS `total` FROM `" . DB_PREFIX . "order`";
-		}
+
 		if (!empty($data['filter_order_status'])) {
 			$implode = [];
 
@@ -449,6 +468,14 @@ class Order extends \Opencart\System\Engine\Model {
 		if (!empty($data['filter_total'])) {
 			$sql .= " AND `total` = '" . (float)$data['filter_total'] . "'";
 		}
+		if ($role_name == "Merchants") {
+			$sql .= "AND `store_id` IN (
+				SELECT store_id 
+				FROM `" . DB_PREFIX . "merchant_store_relation` 
+				WHERE user_id = " . (int)$user_id . "
+				)". "";
+		}
+ 
 
 		$query = $this->db->query($sql);
 
@@ -547,6 +574,8 @@ class Order extends \Opencart\System\Engine\Model {
 	 * @return float
 	 */
 	public function getTotalSales(array $data = []): float {
+
+
 		$sql = "SELECT SUM(`total`) AS `total` FROM `" . DB_PREFIX . "order`";
 
 		if (!empty($data['filter_order_status'])) {
@@ -598,6 +627,7 @@ class Order extends \Opencart\System\Engine\Model {
 		if (!empty($data['filter_total'])) {
 			$sql .= " AND `total` = '" . (float)$data['filter_total'] . "'";
 		}
+
 
 		$query = $this->db->query($sql);
 

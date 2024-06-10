@@ -36,7 +36,9 @@ class Dashboard extends \Opencart\System\Engine\Controller {
 
 		// Get a list of installed modules
 		$extensions = $this->model_setting_extension->getExtensionsByType('dashboard');
-
+		// echo "<pre>";
+		// var_dump($extensions); die();
+		// echo "</pre>";
 		// Add all the modules which have multiple settings for each module
 		foreach ($extensions as $extension) {
 			if ($this->config->get('dashboard_' . $extension['code'] . '_status') && $this->user->hasPermission('access', 'extension/' . $extension['extension'] . '/dashboard/' . $extension['code'])) {
